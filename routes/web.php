@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/','MensagemController@index');
+Route::get('/','MessageController@index');
