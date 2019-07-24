@@ -2,4 +2,3 @@
 
 
 
-Route::apiResource('message','MessageController');

@@ -8,11 +8,12 @@ class Message extends Model
 {
     protected $fillable = [
         'message',
-        'author',
+        'author'
         
     ];
-
-    public function rules(){
+    
+    public function rules()
+    {
         return[
             'author' => 'required',
             'message' => 'required'
