@@ -26,4 +26,40 @@ class MessageController extends Controller
         $data = $this->message->create($dataForm);
         return response()->json($data, 201);
     }
+    
+    public function show($id)
+    {
+        if(!$data = $this->message->find($id))
+        {
+            return response()->json(['error' => 'Não encontrado'], 404);
+        }else 
+        {
+            return response()->json($data);
+        }
+        
+    }
+    public function update(Request $request, $id)
+    {
+        if(!$data = $this->message->find($id)){
+            return response()->json(['error' , 'não encontrado'], 404);
+        }else{
+            $this->validate($request, $this->message->rules());
+            $dataForm = $request->all();
+            $data->update($dataForm);
+            return response()->json($data, 201);
+        }
+       
+    }
+
+    public function destroy($id)
+    {
+        if(!$data = $this->message->find($id))
+        {
+            return response()->json(['error' => 'Não encontrado'],404);
+        }else 
+        {
+            $data->delete();
+            return response()->json(['success'=> 'deletado com sucesso!']);
+        }
+    }
 }
