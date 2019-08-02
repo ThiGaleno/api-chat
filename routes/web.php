@@ -1,4 +1,3 @@
 <?php
 
-
-
+Route::view('/', 'index');
