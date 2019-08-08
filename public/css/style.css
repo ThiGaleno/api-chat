@@ -6,12 +6,39 @@ p{
 }
 img {
     max-width:150px;  
-    max-width: 150px;  
-}
-
-
-.chat {
-
-    p
     
+}
+.icons{
+    min-height: 100%;
+}
+html,body{
+    height: 100%;
+}
+.chatHeader{
+    cursor: pointer;
+}
+.cardFooter{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 75%;
+    
+}
+.chat{
+    display: none;
+    position: fixed;
+    background-color: blue;
+    height: 90%;
+    width: 25%;
+    right: 0px;
+    bottom:03px;
+}
+.openChat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;    
+} 
+.closeChat{
+    text-align: right;
+    background-color: #red;
 }
