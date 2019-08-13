@@ -22,12 +22,18 @@ html,body{
     bottom: 0px;
     right: 0px;
     left: 75%;
-    
+}
+.bgTextChat{
+    background: #555555;
+}
+.message{
+    padding-left: 15px;
+    padding-left: 15px;
+    margin-bottom: 5px;
 }
 .chat{
     display: none;
     position: fixed;
-    background-color: blue;
     height: 90%;
     width: 25%;
     right: 0px;
@@ -40,5 +46,4 @@ html,body{
 } 
 .closeChat{
     text-align: right;
-    background-color: #red;
 }

@@ -2,8 +2,8 @@
     <button class="btn btn-primary" onClick="openChat()"> Abrir Chat </button>
 </div>
 
-<div class="chat" id="formChat">
-    <div class="card">
+<div class="chat bg-dark " id="formChat">
+    <div id="chatContent" class="card border-0 bg-dark">
         <div class="card-header bg-primary">
             <div class="row chatHeader">
                 <div class="col">
@@ -15,16 +15,21 @@
             </div>
         </div>
 
-        <div class="card-body">
-            body
+        <div class="message bg-secondary text-white rounded-pill">
+            <div>Autor</div>
+            <div>Mensagem da pessoa que manda coisa no chat</div>
+        </div>
+        <div class="message bg-secondary text-white rounded-pill">
+            <div>Autor</div>
+            <div>Mensagem da pessoa que manda coisa no chat</div>
         </div>
     </div>
 
     <div class="cardFooter"> 
         <form>
             <div class="input-group">
-                <input type="text" class="form-control" />
-                <button class="button"> Enviar </button>                                     
+                <input type="text" class="bgTextChat form-control text-white bg-secondary border" />
+                <button class="button btn-dark border" onClick="getAll()"> Enviar </button>                                     
             </div>      
         </form>
     </div>
