@@ -1,0 +1,36 @@
+#BUGFIX
+    1 - As mensagens do chat ultrapassam o background quando são muito grandes. 
+        Nivel de prioridade: C 
+        Sugestoes 
+            - Tirar o background arredondado e colocar um quadrado ou semi arredondado
+            - Colocar um limite de caracteres no Input do chat que não ultrapasse 2 linhas no layout.
+
+#ALTERAÇÕES
+    1 - Mudar a cor da letra do título do chat "Chat - Desktopper" e o X de fechar para cor branca
+        Nível de prioridade: D 
+        Sugestoes
+            - Trocar o caractere X por um icon
+
+    2 - Alteração o <Title>
+        Nível de prioridade: D
+
+    3 - Alteração o layout dos atalhos
+        Nível de prioridade: B
+        Sugestoes
+            - Reorganizar elementos quando CHAT estiver aberto para que não fiquem escondidos
+            - Posicionar uniformemente os elementos e mante-los escondidos atrás do chat quando chat estiver aberto
+
+    
+#FUNCIONALIDADES
+    1 - Alteração de nome (author) do chat.
+        Nível de prioridade: C 
+
+    2 - Criar uma logomarca
+        Nível de prioridade: D
+
+    3 - salvar novas mensagens no banco através do input do chat
+        Nível de prioridade: A 
+        Sugestoes
+            - usar AJAX
+            - Usar a API
+    

@@ -21,7 +21,7 @@ class MessageController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request, $this->message->rules());
+        $this->validate($request, $this->message->rules()); //pq $this no validate? cm funciona validate c/ rules()?
         $dataForm = $request->all();
         $data = $this->message->create($dataForm);
         return response()->json($data, 201);

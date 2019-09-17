@@ -28,7 +28,7 @@
     <div class="cardFooter"> 
         <form>
             <div class="input-group">
-                <input type="text" class="bgTextChat form-control text-white bg-secondary border" />
+                <input type="text" name="msgChat" class="bgTextChat form-control text-white bg-secondary border" />
                 <button class="button btn-dark border" onClick="getAll()"> Enviar </button>                                     
             </div>      
         </form>
